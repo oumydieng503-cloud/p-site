@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Oumy Dieng</title>
+  <link rel="stylesheet" href="debutant.css">
+</head>
+<body>
+  <!-- ===== HEADER / NAV ===== -->
+  <header>
+    <nav>
+      <h1>Mon Portfolio</h1>
+      <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== ACCUEIL ===== -->
+  <section id="home" class="section">
+    <h2>Bienvenue !</h2>
+    <p>Je suis <strong>Oumy Dieng</strong>, passionnée par le développement web et les bases de données.</p>
+  </section>
+
+  <!-- ===== A PROPOS ===== -->
+  <section id="about" class="section">
+    <h2>À propos de moi</h2>
+    <p>
+      Je suis diplômée en administration de bases de données et j’ai aussi des compétences en
+      développement web (HTML, CSS, JavaScript, Django). Je souhaite évoluer dans le digital et le e-commerce.
+    </p>
+  </section>
+
+  <!-- ===== PROJETS ===== -->
+  <section id="projects" class="section">
+    <h2>Mes Projets</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Projet 1</h3>
+        <p>Création d’une base de données e-commerce sous SQL Server.</p>
+      </div>
+      <div class="project-card">
+        <h3>Projet 2</h3>
+        <p>Tableau de bord Power BI pour l’analyse de données commerciales.</p>
+      </div>
+      <div class="project-card">
+        <h3>Projet 3</h3>
+        <p>Site web vitrine avec HTML, CSS et JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPETENCES ===== -->
+  <section id="skills" class="section skills-section">
+    <h2>Mes Compétences</h2>
+    <div class="skills-container">
+      <!-- Soft Skills -->
+      <div class="skill-box">
+        <h3>Soft Skills</h3>
+        <div class="skill">
+          <span>Gestion de projet</span>
+          <div class="progress-bar"><div class="progress" data-value="80"></div></div>
+        </div>
+        <div class="skill">
+          <span>Résolution de problème</span>
+          <div class="progress-bar"><div class="progress" data-value="70"></div></div>
+        </div>
+        <div class="skill">
+          <span>Adaptabilité</span>
+          <div class="progress-bar"><div class="progress" data-value="90"></div></div>
+        </div>
+      </div>
+
+      <!-- Hard Skills -->
+      <div class="skill-box">
+        <h3>Hard Skills</h3>
+        <div class="skill">
+          <span>HTML</span>
+          <div class="progress-bar"><div class="progress" data-value="95"></div></div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="progress-bar"><div class="progress" data-value="85"></div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress-bar"><div class="progress" data-value="75"></div></div>
+        </div>
+        <div class="skill">
+          <span>VS Code</span>
+          <div class="progress-bar"><div class="progress" data-value="90"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <h2>Vous avez un <span>projet en tête ?</span></h2>
+    <p>N’hésitez pas à me <strong>contacter</strong></p>
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Votre prénom" required>
+        <input type="text" placeholder="Votre nom" required>
+      </div>
+      <input type="text" placeholder="Votre sujet" required>
+      <textarea placeholder="Écrivez votre message ici..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Designed by <span>Oumy Dieng</span> with HTML, CSS & JS | Tous droits réservés © 2025</p>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    // Animation des barres de progression
+    const progresses = document.querySelectorAll(".progress");
+    progresses.forEach(bar => {
+      const value = bar.getAttribute("data-value");
+      bar.style.width = value + "%";
+    });
+  </script>
+</body>
+</html>
