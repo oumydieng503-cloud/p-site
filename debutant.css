@@ -1,0 +1,168 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f5f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== NAV ===== */
+header {
+  background: #111;
+  padding: 15px 30px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  color: #00d1d1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: #00d1d1;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.section h2 {
+  margin-bottom: 20px;
+  color: #111;
+}
+.section p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== PROJETS ===== */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: left;
+}
+
+/* ===== COMPETENCES ===== */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.skill-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.skill {
+  margin: 15px 0;
+}
+.skill span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  width: 0;
+  background: #00d1d1;
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* ===== CONTACT ===== */
+.contact-section {
+  background: #111;
+  color: #fff;
+}
+.contact-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact-section h2 span {
+  color: #00d1d1;
+}
+.contact-section form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+form textarea {
+  height: 120px;
+  resize: none;
+}
+form button {
+  background: #00d1d1;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+form button:hover {
+  background: #00aaaa;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #f1f1f1;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+footer span {
+  color: #00d1d1;
+  font-weight: 600;
+}
